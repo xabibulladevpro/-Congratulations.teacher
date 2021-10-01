@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container {
+   min-height: 100vh;
+   position: relative;
+   overflow: hidden;
+   padding: 0 30px;
+}
+
+.container .bg_img {
+    position: absolute;
+    left: -1%;
+    top: -5%;
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    z-index: 1;
+    mix-blend-mode: lighten;
+}
+
+.container .bg-vedio {
+    position: absolute;
+    right: -2%;
+    top: -5%;
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+}
+
+.container .card {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.678);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0 30px;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 999;   
+    text-align: center;
+    padding: 0 5px 20px 5px;
+    transition: 2s ease;
+    box-shadow: 0px 0px 22px 3px rgb(51, 255, 0);
+}
+
+.container .card h1 {
+    color: rgba(255, 0, 0, 0.753);
+    padding: 30px 0;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0px -6px 2px rgb(255, 255, 255);
+}
+
+.container .card p {
+    color: rgb(185, 197, 197);
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    line-height: 1.4;
+    font-weight: 500;
+    text-shadow: 0px 3px 2px rgb(7, 7, 7);
+
+}
+
+span {
+    font-style: normal;
+    text-shadow: none;
+}
+
+.container .card .sircle {
+    width: 100%;
+    height: 30px;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.container .card .sircle img {
+    object-fit: cover;
+    width: 50px;
+    float: right;
+    padding-bottom: 120px;
+}
+
+.container .card .sircle h3 {
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+@media (max-width: 890px) {
+    .container .card {
+        width: 600px;
+        height: 630px;
+    } 
+}
+
+@media (max-width: 670px) {
+    .container .card {
+        width: 500px;
+        height: 630px;
+    } 
+    .container .card p{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 555px) {
+    .container .card {
+        width: 400px;
+        height: 739px;
+    } 
+    .container .card h1{
+        padding-bottom: 0px;
+    }
+}
+@media (max-width: 450px) {
+    .container .card {
+        width: 350px;
+        height: 700px;
+    } 
+    .container .card h1{
+        padding-bottom: 0px;
+        font-size: 33px;
+    }
+    .container .card p {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .sircle h3 {
+        font-size: 16px;
+    }
+}
+
+
